@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Réservation des Salles</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+
+<!-- Navbar -->
+<nav>
+    <div>
+        <a href="#">Gestion des Salles</a>
+    </div>
+</nav>
+
+<!-- Titre -->
+<div>
+    <h1>Réservation des Salles</h1>
+    <p>Réservez facilement votre salle en quelques clics</p>
+</div>
+
+<!-- Formulaire -->
+<div>
+    <div>
+        <div>
+            <div>
+                <h3>Formulaire de Réservation</h3>
+
+                <form>
+                    <div>
+                        <div>
+                            <label>Nom complet</label>
+                            <input type="text" placeholder="Entrez votre nom" required>
+                        </div>
+
+                        <div>
+                            <label>Email</label>
+                            <input type="email" placeholder="Entrez votre email" required>
+                        </div>
+                    </div>
+
+                    <div>
+                        <label>Salle</label>
+                        <select required>
+                            <option selected disabled>Choisir une salle</option>
+                            <option>Salle Informatique</option>
+                            <option>Salle de Conférence</option>
+                            <option>Salle de Réunion</option>
+                            <option>Amphithéâtre</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <div>
+                            <label>Date</label>
+                            <input type="date" required>
+                        </div>
+
+                        <div>
+                            <label>Heure</label>
+                            <input type="time" required>
+                        </div>
+                    </div>
+
+                    <div>
+                        <label>Durée (en heures)</label>
+                        <input type="number" min="1" max="8" required>
+                    </div>
+
+                    <div>
+                        <label>Description</label>
+                        <textarea rows="3" placeholder="Motif de la réservation"></textarea>
+                    </div>
+
+                    <div>
+                        <button type="submit">Réserver</button>
+                    </div>
+                </form>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Tableau des réservations -->
+<h3>Liste des Réservations</h3>
+
+<table border="1">
+    <thead>
+        <tr>
+            <th>Nom</th>
+            <th>Salle</th>
+            <th>Date</th>
+            <th>Durée</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Hind</td>
+            <td>Salle Informatique</td>
+            <td>2026-03-10 10:00</td>
+            <td>2h</td>
+        </tr>
+        <tr>
+            <td>Ali</td>
+            <td>Salle de Conférence</td>
+            <td>2026-03-12 14:00</td>
+            <td>3h</td>
+        </tr>
+    </tbody>
+</table>
+<!-- Footer -->
+<div>
+    © 2026 - Projet Réservation des Salles | Tous droits réservés
+</div>
+
+</body>
+</html>
